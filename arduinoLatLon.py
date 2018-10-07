@@ -1,4 +1,4 @@
-import serial, time, geocoder, json
+import serial, time, geocoder, json, subprocess
 ard = serial.Serial('/dev/tty96B0', 9600)
 crash = False
 ardOut = None
@@ -32,8 +32,8 @@ if __name__ == '__main__':
                 })
                 with open('data.json', 'w') as outfile:
                     json.dump(data, outfile)
-                #time.sleep(1)
-            
+                    #time.sleep(1)
+                subprocess.call("scp ~/HackGSU18/data.json root@142.93.73.155:/var/www/html", shell=True)
 
 
     except KeyboardInterrupt:
