@@ -1,4 +1,4 @@
-build-uno/Grove_light_buzz.ino.o: Grove_light_buzz.ino \
+build-uno/button_to_send.ino.o: button_to_send.ino \
  /usr/share/arduino/hardware/arduino//cores/arduino/Arduino.h \
  /usr/share/arduino/hardware/arduino//cores/arduino/binary.h \
  /usr/share/arduino/hardware/arduino//cores/arduino/WCharacter.h \
